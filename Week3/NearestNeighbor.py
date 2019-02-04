@@ -2,7 +2,7 @@ import numpy as np
 
 print('CPSC-51100, Spring 2019')
 print("NAME: MICAH WEBB")
-print("PROGRAMMING ASSIGNMENT #3")
+print("PROGRAMMING ASSIGNMENT #3" + '\n')
 
 #Data loading function
 def load_data(filename):
