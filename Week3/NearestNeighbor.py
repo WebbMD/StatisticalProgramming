@@ -35,4 +35,3 @@ for i in range(0, len(test_label)):
     print(str(i+1), str(test_label[i]), str(predicted_label[i]), sep = ',')
 
 print("Accuracy: " + str(round(accuracy, 2))+"%")
-
