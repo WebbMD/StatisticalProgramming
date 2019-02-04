@@ -1,0 +1,6 @@
+List Comprehensions excel at reducing the number of for loops
+and applying functions to lists. I think relying on them too much can 
+lead to expressions that are difficult to understand. In some cases, it
+may be better to be more explicit when working with lists for the sake of 
+maintainability.
+
