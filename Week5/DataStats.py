@@ -1,6 +1,11 @@
 import pandas as pd
 import re
 
+print('CPSC-51100, Spring 2019')
+print("NAME: MICAH WEBB")
+print("PROGRAMMING ASSIGNMENT #5" + '\n')
+
+
 #Read data into data frame
 df = pd.read_csv("./cps.csv")
 
@@ -73,8 +78,7 @@ for key, value in count_by_start.iteritems():
 
 #Part D - Number of Schools outside the loop
 #Generate boolean values for loop schools based on list of zip codes
-loop_zips = [60601,60602,60603,60604,60605,60606,60607,60616]
-loop_schools = filtered['Zip'].isin(loop_zips)
+loop_schools = filtered['Zip'].isin((60601,60602,60603,60604,60605,60606,60607,60616))
 
 non_loop_schools = filtered.loc[~loop_schools]
 num_nonloop = len(non_loop_schools)
