@@ -59,7 +59,8 @@ gauss_fit = gaussian_kde(income)
 
 #Create non-equal bin sizes such that they look equal on log scale.
 #Use max value of Household income as end point. Number of steps will be number of bins
-logbins = np.logspace(np.log10(10),np.log10(max(income)), 91)
+
+logbins = np.logspace(np.log10(10),np.log10(max(income)), 91) #Not sure of the best bin number here
 
 #Create array of values to execute gauss_fit against.
 xs = np.linspace(0, max(income), num= 1000)
